@@ -1,0 +1,36 @@
+@media (prefers-color-scheme: dark) {
+    :root {
+    --bg-color: black;
+    }}
+
+body {
+  margin: 1cm auto auto;
+  max-width: 800px;
+  background-color: var(--bg-color);
+  font-family: sans-serif;
+  color: CanvasText;
+  color-scheme: light dark;
+}
+
+l {
+  font-weight: normal;
+  font-family: monospace;
+  color: GrayText;
+  margin-bottom: 0.25cm;
+}
+
+t {
+  margin-top: 0.25cm;
+  display: inline-block;
+  font-weight: 800;
+  font-size: 32pt;
+  margin-bottom: 0.375cm;
+}
+
+a:link {
+  color: ButtonText
+}
+
+a:visited {
+  color: GrayText
+}
