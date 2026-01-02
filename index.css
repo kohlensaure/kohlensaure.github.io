@@ -5,6 +5,7 @@
 
 body {
   margin: 1cm auto auto;
+  height: 100%;
   max-width: 800px;
   background-color: var(--bg-color);
   font-family: sans-serif;
