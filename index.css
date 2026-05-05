@@ -4,34 +4,58 @@
     }}
 
 body {
-  margin: 1cm auto auto;
-  height: 100%;
-  max-width: 800px;
+    color: CanvasText;
+  margin: 0 auto auto;
+  width: 800px;
   background-color: var(--bg-color);
-  font-family: sans-serif;
-  color: CanvasText;
   color-scheme: light dark;
-}
-
-l {
+  display: flex;
+  min-height: 100%;
+  text-align: center;
   font-weight: normal;
-  font-family: monospace;
-  color: GrayText;
-  margin-bottom: 0.25cm;
+  font-family: monospace
 }
 
-t {
-  margin-top: 0.25cm;
-  display: inline-block;
-  font-weight: 800;
-  font-size: 32pt;
-  margin-bottom: 0.375cm;
+.title {
+    font-family: sans-serif;
+    mix-blend-mode: exclusion;
+    position: absolute;
+    top: 50%;
+    right: 25px;
+    transform: translate(0, -50%);
+}
+
+.nav {
+    margin: 12px 0 8px 0;
+    text-align: left;
+}
+.banner {
+    margin: 8px 0;
+    border-radius: 25px;
+    background-image: url(banner.png);
+    background-position: left top;
+    background-repeat: repeat;
+    width: 800px;
+    height: 300px;
+    position: relative;
+    font-size: 35pt;
+    color: white;
+}
+
+.main {
+    width: 800px;
+    flex-grow: 1;
+    display: flex;
+}
+
+.note {
+    margin: 16px 0;
+    width: 800px;
+    position: fixed;
+    bottom: 0px;
+    font-size: 10pt;
 }
 
 a:link {
   color: ButtonText
-}
-
-a:visited {
-  color: GrayText
 }
